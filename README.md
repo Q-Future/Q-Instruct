@@ -39,4 +39,6 @@
       <img style="width:100%" src="q-instruct.png">
   </div>
   </div>   
-  
+
+
+Our paper, pre-trained weights, and training instructions are coming soon.

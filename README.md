@@ -36,7 +36,7 @@
 
     
   <div style="width: 100%; text-align: center; margin:auto;">
-      <img style="width:100%" src="qinstruct.png">
+      <img style="width:100%" src="q-instruct.png">
   </div>
   </div>   
   

@@ -44,4 +44,4 @@
   </div>   
 
 
-Our paper, pre-trained weights, and training instructions are coming soon.
+Our paper, training and evaluation instructions are coming soon. In the current stage, we have provided preview-version dataset and model weights of **Q-Instruct**-tuned LLaVA-v1.5-7B, a variant of LLaVA-v1.5-7B whose instruction tuning (stage 2) is jointly supervised by `llava-mix-665k` and `q-instruct-200k`.

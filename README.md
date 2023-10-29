@@ -32,7 +32,9 @@
 <sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author. 
    </div>
 <div>
-   <a href="https://huggingface.co/datasets/nanyangtu/Q-Instruct"><strong>Dataset (preview version)</strong></a>
+   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset (preview)</strong></a> | 
+    <a href="https://huggingface.co/datasets/teowu/llava_v1.5_7b_qinstruct_preview_v0.1"><strong>Weights (preview)</strong></a>
+    
    </div>   
 
     

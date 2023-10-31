@@ -39,7 +39,7 @@
 
     
   <div style="width: 100%; text-align: center; margin:auto;">
-      <img style="width:100%" src="new-q-instruct.png">
+      <img style="width:100%" src="new_q_instruct.png">
   </div>
   </div>   
 

@@ -33,8 +33,8 @@
    </div>
 <div>
    <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset (preview)</strong></a> | 
-    <a href="https://huggingface.co/datasets/teowu/llava_v1.5_7b_qinstruct_preview_v0.1"><strong>Weights (preview)</strong></a>
-    
+    <a href="https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1"><strong>Weights (preview, LLaVA-v1.5-7B)</strong></a>
+    <a href="https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1"><strong>Weights (preview, LLaVA-v1.5-13B)</strong></a>
    </div>   
 
     
@@ -44,4 +44,4 @@
   </div>   
 
 
-Our paper, training and evaluation instructions are coming soon. In the current stage, we have provided preview-version dataset and model weights of **Q-Instruct**-tuned LLaVA-v1.5-7B, a variant of LLaVA-v1.5-7B whose instruction tuning (stage 2) is jointly supervised by `llava-mix-665k` and `q-instruct-200k`.
+Our paper, training and evaluation instructions are coming soon. In the current stage, we have provided preview-version dataset and model weights of **Q-Instruct**-tuned LLaVA-v1.5-7B/13B, variants of original LLaVA-v1.5 models whose instruction tuning (stage 2) is jointly supervised by `llava-mix-665k` and `q-instruct-200k`.

@@ -48,7 +48,7 @@
 
 ### LLaVA-v1.5
 
-1. Install LLaVA.
+#### Install LLaVA.
 
 ```shell
 git clone https://github.com/haotian-liu/LLaVA.git
@@ -56,7 +56,7 @@ cd LLaVA
 pip install -e .
 ```
 
-2. Simple Interactive Demos.
+#### Simple Interactive Demos.
 
 *See the codes and scripts below.*
 
@@ -95,17 +95,33 @@ You can take low-level-related inputs such as `Which part of the sausage is clea
 
 </details>
 
-3. Quantitative Evaluations
+#### Quantitative Evaluations
 
 <details>
-<summary>Multi-choice question evaluation in Q-Bench.</summary>
+<summary>Multi-choice question (MCQ) in Q-Bench.</summary>
+    
+```shell
+python eval_scripts/llava_v1.5/eval_qbench_mcq.py
+```
     
 </details>
 
 
 <details>
 <summary>Image/Video Quality Assessment</summary>
+
+<strong>Image Quality Assessment:</strong>
     
+```shell
+python eval_scripts/llava_v1.5/eval_image_quality.py
+```
+    
+<strong>Video Quality Assessment:</strong>
+
+```shell
+python eval_scripts/llava_v1.5/eval_video_quality.py
+```
+
 </details>
 
 ### mPLUG-Owl-2

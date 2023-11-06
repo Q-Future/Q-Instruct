@@ -35,6 +35,7 @@
    <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset (preview)</strong></a> | 
     <a href="https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1"><strong>Weights (preview, LLaVA-v1.5-7B)</strong></a>
     <a href="https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1"><strong>Weights (preview, LLaVA-v1.5-13B)</strong></a>
+    <a href="NA"><strong>Paper (coming soon)</strong></a>
    </div>   
 
     
@@ -81,6 +82,8 @@ args = type('Args', (), {
 eval_model(args)
 ```
 </details>
+
+![cli_interface](fig/cli_interface.png)
 
 <details>
 <summary>Example Code (CLI Demo for Multi-turn Conversation)</summary>
@@ -149,8 +152,9 @@ _Coming Soon_:
 
 ## Training
 
-At present, we only provide the training scripts with LLaVA-v1.5. Please see [Training Docs](scripts/llava_v1.5) for more details. 
+At present, we only provide the training scripts with LLaVA-v1.5. Please see [Training Docs](scripts/llava_v1.5) for more details.
 
 ## License
 
 Researchers and open-source developers are **free** to use the **Q-Instruct** dataset and the fine-tuned weights as provided for the four MLLMs. We also allow commercial use, while any commercial use should be pre-permitted by our team. Please email `haoning001@e.ntu.edu.sg` to gain the permission for commercial use.
+

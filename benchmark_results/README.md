@@ -1,4 +1,4 @@
-## Results
+## Results of Q-Instruct
 
 ### Answering Multi-Choice Questions
 
@@ -23,8 +23,8 @@
 
 - Results on [LLDescribe](https://huggingface.co/datasets/nanyangtu/LLDescribe-QBench).
 
-  <div style="width: 100%; text-align: center; margin:auto;">
-      <img style="width:100%" src="description.png">
+  <div style="width: 50%; text-align: center; margin:auto;">
+      <img style="width:50%" src="description.png">
   </div> 
 
 

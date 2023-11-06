@@ -62,17 +62,13 @@ See the codes and scripts below.
 
 <details>
 <summary>Example Code (Single Query)</summary>
+    
 ```python
 from llava.mm_utils import get_model_name_from_path
 from llava.eval.run_llava import eval_model
-
-# default LLaVA-v1.5 (7B)
-# change to `model_path = "teowu/llava_v1.5_13b_qinstruct_preview_v0.1"` for LLaVA-v1.5 (13B)
 model_path = "teowu/llava_v1.5_7b_qinstruct_preview_v0.1" 
-
 prompt = "Rate the quality of the image. Think step by step."
 image_file = "fig/sausage.jpg"
-
 args = type('Args', (), {
     "model_path": model_path,
     "model_base": None,
@@ -82,7 +78,6 @@ args = type('Args', (), {
     "image_file": image_file,
     "sep": ",",
 })()
-
 eval_model(args)
 ```
 </details>

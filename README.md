@@ -53,12 +53,12 @@
 ```shell
 git clone https://github.com/haotian-liu/LLaVA.git
 cd LLaVA
-pip install -e ".[train]"
+pip install -e .
 ```
 
-2. Automatically download the pre-trained weights from Q-Instruct.
+2. Simple Interactive Demos.
 
-See the codes and scripts below.
+*See the codes and scripts below.*
 
 <details>
 <summary>Example Code (Single Query)</summary>
@@ -83,7 +83,7 @@ eval_model(args)
 </details>
 
 <details>
-<summary>Example Code (Command Line Demo, Multi-turn Available)</summary>
+<summary>Example Code (CLI Demo for Multi-turn Conversation)</summary>
     
 ```shell
 python -m llava.serve.cli \
@@ -95,6 +95,18 @@ You can take low-level-related inputs such as `Which part of the sausage is clea
 
 </details>
 
+3. Quantitative Evaluations
+
+<details>
+<summary>Multi-choice question evaluation in Q-Bench.</summary>
+    
+</details>
+
+
+<details>
+<summary>Image/Video Quality Assessment</summary>
+    
+</details>
 
 ### mPLUG-Owl-2
 

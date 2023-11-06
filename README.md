@@ -32,10 +32,10 @@
 <sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author. 
    </div>
 <div>
-   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset (preview)</strong></a> | 
-    <a href="https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1"><strong>Weights (preview, LLaVA-v1.5-7B)</strong></a>
-    <a href="https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1"><strong>Weights (preview, LLaVA-v1.5-13B)</strong></a>
-    <a href="NA"><strong>Paper (coming soon)</strong></a>
+   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset</strong></a> | 
+    <a href="https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1"><strong>Weights (LLaVA-v1.5-7B)</strong></a>
+    <a href="https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1"><strong>Weights (LLaVA-v1.5-13B)</strong></a>
+    <a href="NA"><strong>Paper</strong></a>
    </div>   
 
     

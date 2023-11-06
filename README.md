@@ -46,7 +46,7 @@
   
 ## Quick Start
 
-- LLaVA-v1.5
+### LLaVA-v1.5
 
 1. Install LLaVA.
 
@@ -58,6 +58,10 @@ pip install -e ".[train]"
 
 2. Automatically download the pre-trained weights from Q-Instruct.
 
+See the codes and scripts below.
+
+<details>
+<summary>Example Code (Single Query)</summary>
 ```python
 from llava.mm_utils import get_model_name_from_path
 from llava.eval.run_llava import eval_model
@@ -66,7 +70,7 @@ from llava.eval.run_llava import eval_model
 # change to `model_path = "teowu/llava_v1.5_13b_qinstruct_preview_v0.1"` for LLaVA-v1.5 (13B)
 model_path = "teowu/llava_v1.5_7b_qinstruct_preview_v0.1" 
 
-prompt = "Which is the darkest corner of the image?"
+prompt = "Rate the quality of the image. Think step by step."
 image_file = "fig/sausage.jpg"
 
 args = type('Args', (), {
@@ -81,12 +85,27 @@ args = type('Args', (), {
 
 eval_model(args)
 ```
+</details>
 
-- mPLUG-Owl-2
+<details>
+<summary>Example Code (Command Line Demo, Multi-turn Available)</summary>
+    
+```shell
+python -m llava.serve.cli \
+    --model-path teowu/llava_v1.5_7b_qinstruct_preview_v0.1 \
+    --image-file "fig/sausage.jpg" \
+```
+
+You can take low-level-related inputs such as `Which part of the sausage is clear? (A) The upper part (B) The lower part` as a try.
+
+</details>
+
+
+### mPLUG-Owl-2
 
 Coming soon.
 
-- InternLM-XComposer-VL
+### InternLM-XComposer-VL
 
 Coming soon.
 

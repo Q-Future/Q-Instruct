@@ -46,7 +46,7 @@
 
 ## Model Zoo
 
-All weights are converted into Huggingface format and totally compatible with the base repositories ([LLaVA](https://github.com/haotian-liu/LLaVA/), [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl/), [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer)). After installing the base repositories, change the  `model_path` in the original evaluation scripts to automatically download the Q-Instruct-tuned versions.
+All weights are converted into Huggingface format and totally compatible with the base repositories ([LLaVA](https://github.com/haotian-liu/LLaVA/), [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl/), [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer)). After installing the base repositories, you can change the HF-path in the original evaluation scripts into the following ones, so as to automatically download the Q-Instruct-tuned versions.
 
 _Released_:
 

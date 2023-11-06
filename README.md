@@ -83,7 +83,6 @@ eval_model(args)
 ```
 </details>
 
-![cli_interface](fig/cli_interface.png)
 
 <details>
 <summary>Example Code (CLI Demo for Multi-turn Conversation)</summary>
@@ -94,7 +93,11 @@ python -m llava.serve.cli \
     --image-file "fig/sausage.jpg" \
 ```
 
-You can take low-level-related inputs such as `Which part of the sausage is clear? (A) The upper part (B) The lower part` as a try.
+<div style="width: 60%; text-align: center; margin:auto;">
+    <img style="width:100%" src="fig/cli_interface.png">
+</div>
+
+Note: The results may contain randomness as `do_sample=True` is enabled during conversation mode. 
 
 </details>
 

@@ -44,10 +44,24 @@
   </div>   
 
 
-Our paper, training and evaluation instructions are coming soon. In the current stage, we have provided preview-version dataset and model weights of **Q-Instruct**-tuned LLaVA-v1.5-7B/13B, variants of original LLaVA-v1.5 models whose instruction tuning (stage 2) is jointly supervised by `llava-mix-665k` and `q-instruct-200k`.
+## Model Zoo
 
+All weights are converted into Huggingface format and totally compatible with the base repositories ([LLaVA](https://github.com/haotian-liu/LLaVA/), [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl/), [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer)). After installing the base repositories, change the  `model_path` in the original evaluation scripts to automatically download the Q-Instruct-tuned versions.
 
+_Released_:
+
+- [LLaVA-v1.5-7B (mix)](https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_7b_qinstruct_preview_v0.1`
+- [LLaVA-v1.5-13B (mix)](https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_13b_qinstruct_preview_v0.1`
+
+_Coming Soon_:
+
+- mPLUG-Owl-2 (mix)
+- InternLM-XComposer-VL (mix)
+
+## Training
+
+At present, we only provide the training scripts with LLaVA-v1.5. Please see [Training Docs](scripts/llava_v1.5) for more details. 
 
 ## License
 
-Researchers and open-source developers are **free** to use the \textbf{Q-Instruct} dataset and the fine-tuned weights as provided for the four MLLMs. We also allow commercial use, while any commercial use should be pre-permitted by our team. Please email `haoning001@e.ntu.edu.sg` to gain the permission for commercial use.
+Researchers and open-source developers are **free** to use the **Q-Instruct** dataset and the fine-tuned weights as provided for the four MLLMs. We also allow commercial use, while any commercial use should be pre-permitted by our team. Please email `haoning001@e.ntu.edu.sg` to gain the permission for commercial use.

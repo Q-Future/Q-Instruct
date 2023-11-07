@@ -44,7 +44,7 @@
   
 ## Quick Start
 
-If your server is facing poor connection to Huggingface, we provide an alternative way to [Download Weights from ModelScope](model_zoo/#modelscope). Click in to see details.
+If your server is facing a poor connection to Huggingface, we provide an alternative way to [Download Weights from ModelScope](model_zoo/#modelscope). Click in to see details.
 
 对于中国大陆地区的使用者，若您的服务器连接huggingface存在一些困难，我们亦提供通过*魔搭*下载权重的方式。敬请点击参阅[指南](model_zoo/#modelscope)。
 

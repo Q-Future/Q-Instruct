@@ -26,8 +26,8 @@ The links are as follows (WIP):
 
 _Released_:
 
-- [LLaVA-v1.5-7B (mix)](https://www.modelscope.cn/models/qfuture/llava_v1.5_7b_qinstruct_preview_v0.1), HF-path: `qfuture/llava_v1.5_7b_qinstruct_preview_v0.1`
-- [LLaVA-v1.5-13B (mix)](https://www.modelscope.cn/models/qfuture/llava_v1.5_13b_qinstruct_preview_v0.1), HF-path: `qfuture/llava_v1.5_13b_qinstruct_preview_v0.1`
+- [LLaVA-v1.5-7B (mix)](https://www.modelscope.cn/models/qfuture/llava_v1.5_7b_qinstruct_preview_v0.1), ModelScope-path: `qfuture/llava_v1.5_7b_qinstruct_preview_v0.1`
+- [LLaVA-v1.5-13B (mix)](https://www.modelscope.cn/models/qfuture/llava_v1.5_13b_qinstruct_preview_v0.1), ModelScope-path: `qfuture/llava_v1.5_13b_qinstruct_preview_v0.1`
 - [mPLUG-Owl-2 (mix)](https://www.modelscope.cn/models/qfuture/mplug_owl_2_qinstruct_preview_v0.1), ModelScope-path: `qfuture/mplug_owl_2_qinstruct_preview_v0.1`
 
 

@@ -32,7 +32,7 @@
 <sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author. 
    </div>
 <div>
-   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset</strong></a> | <a href="https://github.com/Q-Future/Q-Instruct/tree/main/model_zoo"><strong>Model Zoo</strong></a> |  <a href="https://github.com/Q-Future/Q-Instruct/tree/main/fig/Q_Instruct_v0_1_preview.pdf"><strong>Technical Report (Preview)</strong></a>
+   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset</strong></a> | <a href="https://github.com/Q-Future/Q-Instruct/tree/main/model_zoo"><strong>Model Zoo</strong></a> |  <a href="https://github.com/Q-Future/Q-Instruct/tree/main/fig/Q_Instruct_v0_1_preview.pdf"><strong>Paper (Preview)</strong></a> | <a href="https://a5f5255824fbdcb662.gradio.live"><strong>Demo (Preview)</strong></a>
    </div>   
 
     

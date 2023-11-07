@@ -47,9 +47,11 @@
   
 ## Quick Start
 
-If your server is facing poor connection to Huggingface, we provide an alternative way to [Download_Weights_from_ModelScope](use_with_modelscope/). Click in to see details.
+If your server is facing poor connection to Huggingface, we provide an alternative way to [Download_Weights_from_ModelScope](/model_zoo#modelscope). Click in to see details.
 
 对于中国大陆地区的使用者，若您的服务器连接huggingface存在一些困难，我们亦提供通过*魔搭*下载权重的方式。敬请点击参阅[指南](use_with_modelscope/).
+
+
 
 ### LLaVA-v1.5
 
@@ -134,36 +136,6 @@ python eval_scripts/llava_v1.5/eval_video_quality.py
 
 </details>
 
-#### Quantitative Evaluations
-
-<details>
-<summary>Multi-choice question (MCQ) in Q-Bench.</summary>
-    
-```shell
-python eval_scripts/mplug_owl_2/eval_qbench_mcq.py
-```
-
-</details>
-
-
-<details>
-<summary>Image/Video Quality Assessment</summary>
-
-<strong>Image Quality Assessment:</strong>
-    
-```shell
-python eval_scripts/mplug_owl_2/eval_image_quality.py
-```
-    
-<strong>Video Quality Assessment:</strong>
-
-```shell
-python eval_scripts/mplug_owl_2/eval_video_quality.py
-```
-
-</details>
-
-
 ### mPLUG-Owl-2
 
 *For mPLUG-Owl-2, Only Single GPU Inference is supported now. Please set environmental variable (e.g. `export CUDA_VISIBLE_DEVICES=0`) to make sure that the model can be loaded on only one device.*
@@ -220,26 +192,48 @@ Note: The results may contain randomness as `do_sample=True` is enabled during c
 
 </details>
 
+#### Quantitative Evaluations
+
+<details>
+<summary>Multi-choice question (MCQ) in Q-Bench.</summary>
+    
+```shell
+python eval_scripts/mplug_owl_2/eval_qbench_mcq.py
+```
+
+</details>
+
+
+<details>
+<summary>Image/Video Quality Assessment</summary>
+
+<strong>Image Quality Assessment:</strong>
+    
+```shell
+python eval_scripts/mplug_owl_2/eval_image_quality.py
+```
+    
+<strong>Video Quality Assessment:</strong>
+
+```shell
+python eval_scripts/mplug_owl_2/eval_video_quality.py
+```
+
+</details>
+
 
 ### InternLM-XComposer-VL
 
-Coming soon.
+*---coming soon---*
 
 
 ## Model Zoo
 
-All weights are converted into Huggingface format and totally compatible with the base repositories ([LLaVA](https://github.com/haotian-liu/LLaVA/), [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl/), [InternLM-XComposer](https://github.com/InternLM/InternLM-XComposer)). After installing the base repositories, you can change the HF-path in the original evaluation scripts into the following ones, so as to automatically download the Q-Instruct-tuned versions.
-
-_Released_:
-
-- [LLaVA-v1.5-7B (mix)](https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_7b_qinstruct_preview_v0.1`
-- [LLaVA-v1.5-13B (mix)](https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_13b_qinstruct_preview_v0.1`
-- [mPLUG-Owl-2 (mix)](https://huggingface.co/teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1), HF-path: `teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1`
-- [InternLM-XComposer-VL (mix)](https://huggingface.co/DLight/internlm_xcomposer_vl_qinstruct_preview_v0.1), HF-path: `DLight/internlm_xcomposer_vl_qinstruct_preview_v0.1`
+See [Model Zoo](model_zoo). Both **huggingface** and **modelscope** weights are provided.
 
 ## Training
 
-At present, we only provide the training scripts with LLaVA-v1.5. Please see [Training Docs](scripts/llava_v1.5) for more details.
+At present, we only provide the training scripts with LLaVA-v1.5 (7B/13B). Please see [Training Docs](scripts/llava_v1.5) for more details.
 
 ## License
 

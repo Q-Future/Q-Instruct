@@ -47,6 +47,10 @@
   
 ## Quick Start
 
+If your server is facing poor connection to Huggingface, we provide an alternative way to [Download_Weights_from_ModelScope](use_with_modelscope/). Click in to see details.
+
+对于中国大陆地区的使用者，若您的服务器连接huggingface存在一些困难，我们亦提供通过*魔搭*下载权重的方式。敬请点击参阅[指南](use_with_modelscope/).
+
 ### LLaVA-v1.5
 
 #### Install LLaVA.
@@ -130,9 +134,92 @@ python eval_scripts/llava_v1.5/eval_video_quality.py
 
 </details>
 
+#### Quantitative Evaluations
+
+<details>
+<summary>Multi-choice question (MCQ) in Q-Bench.</summary>
+    
+```shell
+python eval_scripts/mplug_owl_2/eval_qbench_mcq.py
+```
+
+</details>
+
+
+<details>
+<summary>Image/Video Quality Assessment</summary>
+
+<strong>Image Quality Assessment:</strong>
+    
+```shell
+python eval_scripts/mplug_owl_2/eval_image_quality.py
+```
+    
+<strong>Video Quality Assessment:</strong>
+
+```shell
+python eval_scripts/mplug_owl_2/eval_video_quality.py
+```
+
+</details>
+
+
 ### mPLUG-Owl-2
 
-Coming soon.
+*For mPLUG-Owl-2, Only Single GPU Inference is supported now. Please set environmental variable (e.g. `export CUDA_VISIBLE_DEVICES=0`) to make sure that the model can be loaded on only one device.*
+
+
+#### Install mPLUG-Owl-2.
+
+```shell
+git clone https://huggingface.co/spaces/MAGAer13/mPLUG-Owl2.git
+cd mPLUG-Owl2
+cp ../eval_scripts/mplug_owl_2/pyproject.toml ./
+pip install -e .
+```
+
+#### Simple Interactive Demos
+
+<details>
+<summary>Example Code (Single Query)</summary>
+    
+```python
+from mplug_owl2.mm_utils import get_model_name_from_path
+from eval_scripts.mplug_owl_2.run_mplug_owl2 import eval_model
+model_path = "teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1" 
+prompt = "Rate the quality of the image. Think step by step."
+image_file = "fig/sausage.jpg"
+args = type('Args', (), {
+    "model_path": model_path,
+    "model_base": None,
+    "model_name": get_model_name_from_path(model_path),
+    "query": prompt,
+    "conv_mode": None,
+    "image_file": image_file,
+    "sep": ",",
+})()
+eval_model(args)
+```
+
+</details>
+
+<details>
+<summary>Example Code (CLI Demo for Multi-turn Conversation)</summary>
+    
+```shell
+python -m mplug_owl2.serve.cli \
+    --model-path teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1 \
+    --image-file "fig/sausage.jpg" \
+```
+
+<div style="width: 60%; text-align: center; margin:auto;">
+    <img style="width:100%" src="fig/cli_interface.png">
+</div>
+
+Note: The results may contain randomness as `do_sample=True` is enabled during conversation mode. 
+
+</details>
+
 
 ### InternLM-XComposer-VL
 
@@ -147,11 +234,8 @@ _Released_:
 
 - [LLaVA-v1.5-7B (mix)](https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_7b_qinstruct_preview_v0.1`
 - [LLaVA-v1.5-13B (mix)](https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_13b_qinstruct_preview_v0.1`
-
-_Coming Soon_:
-
-- mPLUG-Owl-2 (mix)
-- InternLM-XComposer-VL (mix)
+- [mPLUG-Owl-2 (mix)](https://huggingface.co/teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1), HF-path: `teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1`
+- [InternLM-XComposer-VL (mix)](https://huggingface.co/DLight/internlm_xcomposer_vl_qinstruct_preview_v0.1), HF-path: `DLight/internlm_xcomposer_vl_qinstruct_preview_v0.1`
 
 ## Training
 

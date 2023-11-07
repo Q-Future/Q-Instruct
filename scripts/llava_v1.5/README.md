@@ -1,6 +1,8 @@
 ## Training with Q-Instruct
 
-This document provides instruction on how to train with **Q-Instruct** dataset on LLaVA-v1.5 (7B/13B).
+This document provides instruction on how to train with **Q-Instruct** dataset on LLaVA-v1.5 (7B/13B), under the proposed two strategies (***mix*** and ***after***), shown as follows.
+
+![](strategies.png)
 
 
 ### Step 0: Pre-requisites
@@ -88,6 +90,12 @@ jq -s 'add' LLaVA/playground/data/cleaned_labels.json LLaVA/playground/data/llav
 Please make sure you have enough computational resources before training.
 
 #### Strategy (a): Mix with High-level Datasets
+
+- *(Pre-requisite)* Get Pre-trained Multi-modal Projectors from original LLaVA-v1.5
+
+```shell
+sh scripts/llava_v1.5/get_mm_projectors.sh
+```
 
 - 13B *(requires 8x A100 80G), 21h*
 

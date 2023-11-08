@@ -21,7 +21,7 @@ If your server is facing poor connection to Huggingface, we provide an alternati
 #### Step 1: Download Weights
 
 
-The links are as follows (WIP):
+The links are as follows:
 
 
 _Released_:
@@ -29,17 +29,14 @@ _Released_:
 - [LLaVA-v1.5-7B (mix)](https://www.modelscope.cn/models/qfuture/llava_v1.5_7b_qinstruct_preview_v0.1), ModelScope-path: `qfuture/llava_v1.5_7b_qinstruct_preview_v0.1`
 - [LLaVA-v1.5-13B (mix)](https://www.modelscope.cn/models/qfuture/llava_v1.5_13b_qinstruct_preview_v0.1), ModelScope-path: `qfuture/llava_v1.5_13b_qinstruct_preview_v0.1`
 - [mPLUG-Owl-2 (mix)](https://www.modelscope.cn/models/qfuture/mplug_owl_2_qinstruct_preview_v0.1), ModelScope-path: `qfuture/mplug_owl_2_qinstruct_preview_v0.1`
-
-
-_Coming Soon_:
-
-- InternLM-XComposer-VL (mix)
+- [InternLM-XComposer-VL (mix)](https://www.modelscope.cn/models/qfuture/internlm_xcomposer_vl_qinstruct_preview_v0.1), ModelScope-path: `qfuture/internlm_xcomposer_vl_qinstruct_preview_v0.1`
 
 To use them, you need to install `Git LFS` and then clone the repositories directly from ModelScope, under the main directory of Q-Instruct.
 
 ```shell
-git clone https://www.modelscope.cn/models/qfuture/$MODEL_NAME_qinstruct_preview_v0.1.git
+git clone https://www.modelscope.cn/qfuture/$MODEL_NAME_qinstruct_preview_v0.1.git
 ```
+
 
 #### Step 2: Redirect the Model Paths to Your Local Directory
 

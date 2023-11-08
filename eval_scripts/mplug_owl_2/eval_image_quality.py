@@ -51,22 +51,22 @@ def main(args):
 
     
     image_paths = [
+        "../datasets/LIVEC/Images/",
         "../datasets/AGIQA-3K/database/",
         "../datasets/1024x768/",
         "../datasets/SPAQ/",
         "../datasets/FLIVE_Database/database/",
-        "../datasets/LIVEC/Images/",
         "../datasets/CGIQA-6K/database/",
         "../datasets/kadid10k/images/",
     ]
 
     json_prefix = "../datasets/json/"
     jsons = [
+        json_prefix + "livec.json",
         json_prefix + "agi.json",
         json_prefix + "koniq.json",
         json_prefix + "spaq.json",
         json_prefix + "flive.json",
-        json_prefix + "livec.json",
         json_prefix + "cgi.json",
         json_prefix + "kadid.json",
     ]

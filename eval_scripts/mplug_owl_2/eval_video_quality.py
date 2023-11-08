@@ -96,7 +96,7 @@ def main(args):
             images = load_video(image_path + filename)
             llddata["logit_good"] = 0
             llddata["logit_poor"] = 0
-
+            
             for image in images:
                 image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
 

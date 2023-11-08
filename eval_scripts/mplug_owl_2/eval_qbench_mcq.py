@@ -77,35 +77,32 @@ def main(args):
 
     for i, llddata in enumerate((llvqa_data)):
         filename = llddata["img_path"]
-        image = load_image(args.image_folder + filename)
-        image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
         
-        
-        message = llddata["question"]
+        message = llddata["question"] + "\n"
         for choice, ans in zip(["A.", "B.", "C.", "D."], llddata["candidates"]):
             message += f"{choice} {ans}\n"
             if "correct_ans" in llddata and ans == llddata["correct_ans"]:
                 correct_choice = choice[0]
         if args.lang == "en":
-            message = message + "\nAnswer with the option's letter from the given choices directly.\n"
+            message = message + "Answer with the option's letter from the given choices directly.\n"
         elif args.lang == "zh":
-            message = message + "\n请直接回答正确选项的字母\n"
+            message = message + "请直接回答正确选项的字母\n"
         else:
             raise NotImplementedError("Q-Bench does not support languages other than English (en) and Chinese (zh) yet. Contact us (https://github.com/Q-Future/Q-Bench/) to convert Q-Bench into more languages.")
             
         inp = message
         
         conv = conv_templates[args.conv_mode].copy()
-        if image is not None:
-            # first message
-            inp = DEFAULT_IMAGE_TOKEN + inp
-            conv.append_message(conv.roles[0], inp)
-            image = None
-        else:
-            # later messages
-            conv.append_message(conv.roles[0], inp)
+        inp = DEFAULT_IMAGE_TOKEN + inp
+        conv.append_message(conv.roles[0], inp)
         conv.append_message(conv.roles[1], None)
         prompt = conv.get_prompt()
+        
+        print(prompt)
+        
+        image = load_image(args.image_folder + filename)
+        image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
+        
 
         input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).to(model.device)
         stop_str = conv.sep if conv.sep_style not in [SeparatorStyle.TWO, SeparatorStyle.TWO_NO_SYS] else conv.sep2
@@ -144,11 +141,10 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model-path", type=str, default="teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1")
-        parser.add_argument("--model-base", type=str, default=None)
+    parser.add_argument("--model-base", type=str, default=None)
     parser.add_argument("--image-folder", type=str, default="playground/data/LLVisionQA/images/")
     parser.add_argument("--questions-file", type=str, default="playground/data/LLVisionQA/llvisionqa_dev.json")
     parser.add_argument("--answers-file", type=str, default="results/mix-mplug-owl-2-7b/qbench_a1_dev.jsonl")
-    parser.add_argument("--conv-mode", type=str, default="llava_v1")
     parser.add_argument("--split", type=str, default="dev")
     parser.add_argument("--lang", type=str, default="en")
     parser.add_argument("--device", type=str, default="cuda")

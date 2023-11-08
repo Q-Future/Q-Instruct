@@ -32,7 +32,7 @@
 <sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author. 
    </div>
 <div>
-   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset</strong></a> | <a href="https://github.com/Q-Future/Q-Instruct/tree/main/model_zoo"><strong>Model Zoo</strong></a> |  <a href="https://github.com/Q-Future/Q-Instruct/tree/main/fig/Q_Instruct_v0_1_preview.pdf"><strong>Paper (Preview)</strong></a> | <a href="https://87848e86fc11306961.gradio.live"><strong>Demo (Preview)</strong></a>
+   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset</strong></a> | <a href="https://github.com/Q-Future/Q-Instruct/tree/main/model_zoo"><strong>Model Zoo</strong></a> |  <a href="https://github.com/Q-Future/Q-Instruct/tree/main/fig/Q_Instruct_v0_1_preview.pdf"><strong>Paper (Preview)</strong></a> | <a href="https://huggingface.co/spaces/teowu/Q-Instruct-on-mPLUG-Owl-2"><strong>Demo (Preview)</strong></a>
    </div>   
 
     
@@ -141,9 +141,8 @@ python eval_scripts/llava_v1.5/eval_video_quality.py
 #### Install mPLUG-Owl-2.
 
 ```shell
-git clone https://huggingface.co/spaces/MAGAer13/mPLUG-Owl2.git
-cd mPLUG-Owl2
-cp ../eval_scripts/mplug_owl_2/pyproject.toml ./
+git clone https://github.com/X-PLUG/mPLUG-Owl.git
+cd mPLUG_Owl/mPLUG_Owl2/ 
 pip install -e .
 ```
 

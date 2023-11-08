@@ -32,7 +32,7 @@
 <sup>*</sup>Equal contribution. <sup>#</sup>Corresponding author. 
    </div>
 <div>
-   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset</strong></a> | <a href="https://github.com/Q-Future/Q-Instruct/tree/main/model_zoo"><strong>Model Zoo</strong></a> |  <a href="https://github.com/Q-Future/Q-Instruct/tree/main/fig/Q_Instruct_v0_1_preview.pdf"><strong>Technical Report (Preview)</strong></a>
+   <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><strong>Dataset</strong></a> | <a href="https://github.com/Q-Future/Q-Instruct/tree/main/model_zoo"><strong>Model Zoo</strong></a> |  <a href="https://github.com/Q-Future/Q-Instruct/tree/main/fig/Q_Instruct_v0_1_preview.pdf"><strong>Paper (Preview)</strong></a> | <a href="https://87848e86fc11306961.gradio.live"><strong>Demo (Preview)</strong></a>
    </div>   
 
     
@@ -44,9 +44,9 @@
   
 ## Quick Start
 
-If your server is facing poor connection to Huggingface, we provide an alternative way to [Download_Weights_from_ModelScope](/model_zoo#modelscope). Click in to see details.
+If your server is facing a poor connection to Huggingface, we provide an alternative way to [Download Weights from ModelScope](model_zoo/#modelscope). Click in to see details.
 
-对于中国大陆地区的使用者，若您的服务器连接huggingface存在一些困难，我们亦提供通过*魔搭*下载权重的方式。敬请点击参阅[指南](use_with_modelscope/).
+对于中国大陆地区的使用者，若您的服务器连接huggingface存在一些困难，我们亦提供通过*魔搭*下载权重的方式。敬请点击参阅[指南](model_zoo/#modelscope)。
 
 
 

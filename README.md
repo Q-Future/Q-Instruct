@@ -226,9 +226,97 @@ python eval_scripts/mplug_owl_2/eval_video_quality.py
 </details>
 
 
+
+
 ### InternLM-XComposer-VL
 
-*---coming soon---*
+*InternLM-XComposer-VL has been integrated into Huggingface `AutoModel` (remote code mode). You can directly start with the code below without a separate install process.*
+
+#### Simple Interactive Demos
+
+<details>
+<summary>Example Code (Single Query)</summary>
+    
+```python
+import torch
+from transformers import AutoModel, AutoTokenizer
+
+torch.set_grad_enabled(False)
+
+# init model and tokenizer
+model = AutoModel.from_pretrained('DLight1551/internlm-xcomposer-vl-7b-qinstruct-full', trust_remote_code=True).cuda().eval()
+tokenizer = AutoTokenizer.from_pretrained('DLight1551/internlm-xcomposer-vl-7b-qinstruct-full', trust_remote_code=True)
+model.tokenizer = tokenizer
+
+# Single-Turn Text-Image Dialogue
+text = 'Describe and evaluate the quality of the image.'
+image = 'fig/sausage.jpg'
+response = model.generate(text, image)
+print(response)
+```
+   
+</details>
+
+<details>
+<summary>Example Code (Multi-Turn Conversation)</summary>
+    
+```python
+import torch
+from transformers import AutoModel, AutoTokenizer
+
+torch.set_grad_enabled(False)
+
+# init model and tokenizer
+model = AutoModel.from_pretrained('DLight1551/internlm-xcomposer-vl-7b-qinstruct-full', trust_remote_code=True).cuda().eval()
+tokenizer = AutoTokenizer.from_pretrained('DLight1551/internlm-xcomposer-vl-7b-qinstruct-full', trust_remote_code=True)
+model.tokenizer = tokenizer
+
+# Multi-Turn Dialogue
+text = 'Describe and evaluate the quality of the image.'
+image = 'fig/sausage.jpg'
+response, history = model.chat(text, image, history=None)
+print(f'User: {text}')
+print(f'Bot: {response}')
+
+text = 'Which part of the pan is clearer, the top part of the bottom part?'
+response, history = model.chat(text=text, image=None, history=history)
+print(f'User: {text}')
+print(f'Bot: {response}')
+```
+   
+</details>
+
+
+#### Quantitative Evaluations
+
+
+<details>
+<summary>Multi-choice question (MCQ) in Q-Bench.</summary>
+    
+```shell
+python eval_scripts/mplug_owl_2/eval_qbench_mcq.py
+```
+
+</details>
+
+
+<details>
+<summary>Image/Video Quality Assessment</summary>
+
+<strong>Image Quality Assessment:</strong>
+    
+```shell
+python eval_scripts/mplug_owl_2/eval_image_quality.py
+```
+    
+<strong>Video Quality Assessment:</strong>
+
+```shell
+python eval_scripts/mplug_owl_2/eval_video_quality.py
+```
+
+</details>
+
 
 
 ## Model Zoo

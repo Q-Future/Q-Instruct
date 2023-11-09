@@ -294,7 +294,7 @@ print(f'Bot: {response}')
 <summary>Multi-choice question (MCQ) in Q-Bench.</summary>
     
 ```shell
-python eval_scripts/mplug_owl_2/eval_qbench_mcq.py
+python eval_scripts/internlm_xcomposer_vl/eval_qbench_mcq.py
 ```
 
 </details>
@@ -306,13 +306,13 @@ python eval_scripts/mplug_owl_2/eval_qbench_mcq.py
 <strong>Image Quality Assessment:</strong>
     
 ```shell
-python eval_scripts/mplug_owl_2/eval_image_quality.py
+python eval_scripts/internlm_xcomposer_vl/eval_image_quality.py
 ```
     
 <strong>Video Quality Assessment:</strong>
 
 ```shell
-python eval_scripts/mplug_owl_2/eval_video_quality.py
+python eval_scripts/internlm_xcomposer_vl/eval_video_quality.py
 ```
 
 </details>

@@ -3,10 +3,9 @@
 <div align="center">
     <a href="https://huggingface.co/spaces/teowu/Q-Instruct-on-mPLUG-Owl-2"><img src="https://huggingface.co/datasets/huggingface/badges/raw/main/open-in-hf-spaces-sm-dark.svg" alt="Open in Spaces"></a>
 <a href="https://arxiv.org/abs/2311.06783"><img src="https://img.shields.io/badge/Arxiv-2311:06783-red"></a>
-    <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><img src="https://img.shields.io/badge/Dataset-Release-green"></a>
+    <a href="https://huggingface.co/datasets/teowu/Q-Instruct"><img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-green"></a>
     <a href="https://hits.seeyoufarm.com"><img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FQ-Future%2FQ-Instruct&count_bg=%23E97EBA&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=visitors&edge_flat=false" alt="Hits"></a>
     <a href='https://github.com/Q-Future/Q-Instruct/stargazers'><img src='https://img.shields.io/github/stars/Q-Future/Q-Instruct.svg?style=social'></a>
-    <a href="https://twitter.com/HaoningTimothy"><img style="width:2%" src="https://about.twitter.com/content/dam/about-twitter/x/brand-toolkit/logo-black.png.twimg.1920.png"></a>
 </div>
 
 

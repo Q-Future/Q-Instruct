@@ -51,7 +51,7 @@
   
 ## Quick Start
 
-If your server is facing a poor connection to Huggingface, we provide an alternative way to [Download Weights from ModelScope](model_zoo/#modelscope). Click in to see details.
+If your server is facing a poor connection to Hugging Face, we provide an alternative way to [Download Weights from ModelScope](model_zoo/#modelscope). Click in to see details.
 
 对于中国大陆地区的使用者，若您的服务器连接huggingface存在一些困难，我们亦提供通过*魔搭*下载权重的方式。敬请点击参阅[指南](model_zoo/#modelscope)。
 
@@ -229,7 +229,7 @@ python eval_scripts/mplug_owl_2/eval_video_quality.py
 
 ### InternLM-XComposer-VL
 
-*InternLM-XComposer-VL has been integrated into Huggingface `AutoModel` (remote code mode). You can directly start with the code below without a separate install process.*
+*InternLM-XComposer-VL has been integrated into Hugging Face `AutoModel` (remote code mode). You can directly start with the code below without a separate install process.*
 
 #### Simple Interactive Demos
 
@@ -320,7 +320,7 @@ python eval_scripts/internlm_xcomposer_vl/eval_video_quality.py
 
 ## Model Zoo
 
-See [Model Zoo](model_zoo). Both **huggingface** and **modelscope** weights are provided.
+See [Model Zoo](model_zoo). Both **Hugging Face** and **modelscope** weights are provided.
 
 ## Training
 

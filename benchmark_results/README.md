@@ -1,4 +1,4 @@
-## Results of Q-Instruct
+## Results
 
 ### Answering Multi-Choice Questions
 

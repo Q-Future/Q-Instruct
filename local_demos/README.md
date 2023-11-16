@@ -1,4 +1,4 @@
-# Demos on Your Local Machine
+# Local Demos
 
 
 To run the demos exactly the same as the HF spaces, you will need to slightly modify your environment:

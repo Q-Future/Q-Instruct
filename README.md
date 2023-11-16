@@ -50,6 +50,12 @@
   </div>   
   
   
+## Build Local Demos
+
+We have now supported to run the Q-Instruct demos on your own device!
+
+See [local demos](local_demos) for instructions. (*Now support `mplug_owl-2` only*)
+  
 ## Quick Start
 
 If your server is facing a poor connection to Huggingface, we provide an alternative way to [Download Weights from ModelScope](model_zoo/#modelscope). Click in to see details.
@@ -331,3 +337,30 @@ At present, we only provide the training scripts with LLaVA-v1.5 (7B/13B). Pleas
 
 Researchers and open-source developers are **free** to use the **Q-Instruct** dataset and the fine-tuned weights as provided for the four MLLMs. We also allow commercial use, while any commercial use should be pre-permitted by our team. Please email `haoning001@e.ntu.edu.sg` to gain the permission for commercial use.
 
+## Citation
+
+If you consider this work interesting, please feel free to cite it in your work!
+
+```bibtex
+@misc{wu2023qinstruct,
+      title={Q-Instruct: Improving Low-level Visual Abilities for Multi-modality Foundation Models}, 
+      author={Haoning Wu and Zicheng Zhang and Erli Zhang and Chaofeng Chen and Liang Liao and Annan Wang and Kaixin Xu and Chunyi Li and Jingwen Hou and Guangtao Zhai and Geng Xue and Wenxiu Sun and Qiong Yan and Weisi Lin},
+      year={2023},
+      eprint={2311.06783},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
+
+The results are upon the [Q-Bench](https://github.com/Q-Future/Q-Bench), whose bibtex is provided as follows:
+
+```bibtex
+@misc{wu2023qbench,
+      title={Q-Bench: A Benchmark for General-Purpose Foundation Models on Low-level Vision}, 
+      author={Haoning Wu and Zicheng Zhang and Erli Zhang and Chaofeng Chen and Liang Liao and Annan Wang and Chunyi Li and Wenxiu Sun and Qiong Yan and Guangtao Zhai and Weisi Lin},
+      year={2023},
+      eprint={2309.14181},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```

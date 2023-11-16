@@ -1,41 +1,0 @@
-2023-11-16 12:49:25 | INFO | model_worker | Loading the model mplug_owl2_7b_448_qinstruct_preview_v0.1 on worker 03cfe7 ...
-2023-11-16 12:49:27 | ERROR | stderr | Loading checkpoint shards:   0%|                                                                      | 0/33 [00:00<?, ?it/s]
-2023-11-16 12:49:27 | ERROR | stderr | Loading checkpoint shards:   3%|█▉                                                            | 1/33 [00:00<00:12,  2.63it/s]
-2023-11-16 12:49:28 | ERROR | stderr | Loading checkpoint shards:   6%|███▊                                                          | 2/33 [00:00<00:11,  2.68it/s]
-2023-11-16 12:49:28 | ERROR | stderr | Loading checkpoint shards:   9%|█████▋                                                        | 3/33 [00:01<00:11,  2.64it/s]
-2023-11-16 12:49:29 | ERROR | stderr | Loading checkpoint shards:  12%|███████▌                                                      | 4/33 [00:01<00:11,  2.63it/s]
-2023-11-16 12:49:29 | ERROR | stderr | Loading checkpoint shards:  15%|█████████▍                                                    | 5/33 [00:01<00:10,  2.64it/s]
-2023-11-16 12:49:29 | ERROR | stderr | Loading checkpoint shards:  15%|█████████▍                                                    | 5/33 [00:02<00:11,  2.46it/s]
-2023-11-16 12:49:29 | ERROR | stderr | 
-2023-11-16 12:49:29 | ERROR | stderr | Traceback (most recent call last):
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/Downloads/Q-Instruct/local_demos/mplug_owl_2/app.py", line 493, in <module>
-2023-11-16 12:49:29 | ERROR | stderr |     model = ModelWorker(args.model_path, None, None, args.load_8bit, args.load_4bit, args.device)
-2023-11-16 12:49:29 | ERROR | stderr |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/Downloads/Q-Instruct/local_demos/mplug_owl_2/model_worker.py", line 45, in __init__
-2023-11-16 12:49:29 | ERROR | stderr |     self.tokenizer, self.model, self.image_processor, self.context_len = load_pretrained_model(
-2023-11-16 12:49:29 | ERROR | stderr |                                                                          ^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/Downloads/Q-Instruct/mPLUG-Owl2/mplug_owl2/model/builder.py", line 89, in load_pretrained_model
-2023-11-16 12:49:29 | ERROR | stderr |     model = MPLUGOwl2LlamaForCausalLM.from_pretrained(model_path, low_cpu_mem_usage=True, **kwargs)
-2023-11-16 12:49:29 | ERROR | stderr |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/transformers/modeling_utils.py", line 2903, in from_pretrained
-2023-11-16 12:49:29 | ERROR | stderr |     ) = cls._load_pretrained_model(
-2023-11-16 12:49:29 | ERROR | stderr |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/transformers/modeling_utils.py", line 3246, in _load_pretrained_model
-2023-11-16 12:49:29 | ERROR | stderr |     state_dict = load_state_dict(shard_file)
-2023-11-16 12:49:29 | ERROR | stderr |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/transformers/modeling_utils.py", line 460, in load_state_dict
-2023-11-16 12:49:29 | ERROR | stderr |     return torch.load(checkpoint_file, map_location="cpu")
-2023-11-16 12:49:29 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/torch/serialization.py", line 809, in load
-2023-11-16 12:49:29 | ERROR | stderr |     return _load(opened_zipfile, map_location, pickle_module, **pickle_load_args)
-2023-11-16 12:49:29 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/torch/serialization.py", line 1172, in _load
-2023-11-16 12:49:29 | ERROR | stderr |     result = unpickler.load()
-2023-11-16 12:49:29 | ERROR | stderr |              ^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/torch/serialization.py", line 1142, in persistent_load
-2023-11-16 12:49:29 | ERROR | stderr |     typed_storage = load_tensor(dtype, nbytes, key, _maybe_decode_ascii(location))
-2023-11-16 12:49:29 | ERROR | stderr |                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/torch/serialization.py", line 1112, in load_tensor
-2023-11-16 12:49:29 | ERROR | stderr |     storage = zip_file.get_storage_from_record(name, numel, torch.UntypedStorage)._typed_storage()._untyped_storage
-2023-11-16 12:49:29 | ERROR | stderr |               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-2023-11-16 12:49:29 | ERROR | stderr | KeyboardInterrupt

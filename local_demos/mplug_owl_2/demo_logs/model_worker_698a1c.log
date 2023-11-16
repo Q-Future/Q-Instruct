@@ -1,0 +1,164 @@
+2023-11-16 12:49:44 | INFO | model_worker | Loading the model mplug_owl2_7b_448_qinstruct_preview_v0.1 on worker 698a1c ...
+2023-11-16 12:49:46 | ERROR | stderr | Loading checkpoint shards:   0%|                                                                      | 0/33 [00:00<?, ?it/s]
+2023-11-16 12:49:46 | ERROR | stderr | Loading checkpoint shards:   3%|█▉                                                            | 1/33 [00:00<00:12,  2.58it/s]
+2023-11-16 12:49:47 | ERROR | stderr | Loading checkpoint shards:   6%|███▊                                                          | 2/33 [00:00<00:12,  2.56it/s]
+2023-11-16 12:49:47 | ERROR | stderr | Loading checkpoint shards:   9%|█████▋                                                        | 3/33 [00:01<00:11,  2.58it/s]
+2023-11-16 12:49:47 | ERROR | stderr | Loading checkpoint shards:  12%|███████▌                                                      | 4/33 [00:01<00:11,  2.60it/s]
+2023-11-16 12:49:48 | ERROR | stderr | Loading checkpoint shards:  15%|█████████▍                                                    | 5/33 [00:01<00:10,  2.61it/s]
+2023-11-16 12:49:48 | ERROR | stderr | Loading checkpoint shards:  18%|███████████▎                                                  | 6/33 [00:02<00:10,  2.60it/s]
+2023-11-16 12:49:49 | ERROR | stderr | Loading checkpoint shards:  21%|█████████████▏                                                | 7/33 [00:02<00:10,  2.55it/s]
+2023-11-16 12:49:49 | ERROR | stderr | Loading checkpoint shards:  24%|███████████████                                               | 8/33 [00:03<00:10,  2.49it/s]
+2023-11-16 12:49:49 | ERROR | stderr | Loading checkpoint shards:  27%|████████████████▉                                             | 9/33 [00:03<00:09,  2.43it/s]
+2023-11-16 12:49:50 | ERROR | stderr | Loading checkpoint shards:  30%|██████████████████▍                                          | 10/33 [00:03<00:09,  2.44it/s]
+2023-11-16 12:49:50 | ERROR | stderr | Loading checkpoint shards:  33%|████████████████████▎                                        | 11/33 [00:04<00:08,  2.45it/s]
+2023-11-16 12:49:51 | ERROR | stderr | Loading checkpoint shards:  36%|██████████████████████▏                                      | 12/33 [00:04<00:08,  2.38it/s]
+2023-11-16 12:49:51 | ERROR | stderr | Loading checkpoint shards:  39%|████████████████████████                                     | 13/33 [00:05<00:08,  2.35it/s]
+2023-11-16 12:49:52 | ERROR | stderr | Loading checkpoint shards:  42%|█████████████████████████▉                                   | 14/33 [00:05<00:08,  2.32it/s]
+2023-11-16 12:49:52 | ERROR | stderr | Loading checkpoint shards:  45%|███████████████████████████▋                                 | 15/33 [00:06<00:07,  2.34it/s]
+2023-11-16 12:49:52 | ERROR | stderr | Loading checkpoint shards:  48%|█████████████████████████████▌                               | 16/33 [00:06<00:07,  2.37it/s]
+2023-11-16 12:49:53 | ERROR | stderr | Loading checkpoint shards:  52%|███████████████████████████████▍                             | 17/33 [00:06<00:06,  2.35it/s]
+2023-11-16 12:49:53 | ERROR | stderr | Loading checkpoint shards:  55%|█████████████████████████████████▎                           | 18/33 [00:07<00:06,  2.34it/s]
+2023-11-16 12:49:54 | ERROR | stderr | Loading checkpoint shards:  58%|███████████████████████████████████                          | 19/33 [00:07<00:05,  2.37it/s]
+2023-11-16 12:49:54 | ERROR | stderr | Loading checkpoint shards:  61%|████████████████████████████████████▉                        | 20/33 [00:08<00:05,  2.39it/s]
+2023-11-16 12:49:55 | ERROR | stderr | Loading checkpoint shards:  64%|██████████████████████████████████████▊                      | 21/33 [00:08<00:05,  2.39it/s]
+2023-11-16 12:49:55 | ERROR | stderr | Loading checkpoint shards:  67%|████████████████████████████████████████▋                    | 22/33 [00:09<00:04,  2.39it/s]
+2023-11-16 12:49:55 | ERROR | stderr | Loading checkpoint shards:  70%|██████████████████████████████████████████▌                  | 23/33 [00:09<00:04,  2.34it/s]
+2023-11-16 12:49:56 | ERROR | stderr | Loading checkpoint shards:  73%|████████████████████████████████████████████▎                | 24/33 [00:09<00:03,  2.36it/s]
+2023-11-16 12:49:56 | ERROR | stderr | Loading checkpoint shards:  76%|██████████████████████████████████████████████▏              | 25/33 [00:10<00:03,  2.35it/s]
+2023-11-16 12:49:57 | ERROR | stderr | Loading checkpoint shards:  79%|████████████████████████████████████████████████             | 26/33 [00:10<00:02,  2.35it/s]
+2023-11-16 12:49:58 | ERROR | stderr | Loading checkpoint shards:  82%|█████████████████████████████████████████████████▉           | 27/33 [00:11<00:03,  1.66it/s]
+2023-11-16 12:49:58 | ERROR | stderr | Loading checkpoint shards:  85%|███████████████████████████████████████████████████▊         | 28/33 [00:12<00:02,  1.93it/s]
+2023-11-16 12:49:58 | ERROR | stderr | Loading checkpoint shards:  88%|█████████████████████████████████████████████████████▌       | 29/33 [00:12<00:01,  2.10it/s]
+2023-11-16 12:49:59 | ERROR | stderr | Loading checkpoint shards:  91%|███████████████████████████████████████████████████████▍     | 30/33 [00:12<00:01,  2.18it/s]
+2023-11-16 12:49:59 | ERROR | stderr | Loading checkpoint shards:  94%|█████████████████████████████████████████████████████████▎   | 31/33 [00:13<00:00,  2.22it/s]
+2023-11-16 12:50:00 | ERROR | stderr | Loading checkpoint shards:  97%|███████████████████████████████████████████████████████████▏ | 32/33 [00:13<00:00,  2.27it/s]
+2023-11-16 12:50:00 | ERROR | stderr | Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████| 33/33 [00:14<00:00,  2.27it/s]
+2023-11-16 12:50:00 | ERROR | stderr | Loading checkpoint shards: 100%|█████████████████████████████████████████████████████████████| 33/33 [00:14<00:00,  2.32it/s]
+2023-11-16 12:50:00 | ERROR | stderr | 
+2023-11-16 12:50:00 | WARNING | transformers.modeling_utils | Some weights of MPLUGOwl2LlamaForCausalLM were not initialized from the model checkpoint at teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1 and are newly initialized: ['model.visual_abstractor.encoder.layers.3.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.1.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.4.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.2.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.5.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.1.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.3.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.0.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.4.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.0.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.5.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.2.crossattention.attention.k_pos_embed']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2023-11-16 12:50:00 | WARNING | transformers.modeling_utils | Some weights of MPLUGOwl2LlamaForCausalLM were not initialized from the model checkpoint at teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1 and are newly initialized: ['model.visual_abstractor.encoder.layers.3.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.1.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.4.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.2.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.5.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.1.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.3.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.0.crossattention.attention.q_pos_embed', 'model.visual_abstractor.encoder.layers.4.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.0.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.5.crossattention.attention.k_pos_embed', 'model.visual_abstractor.encoder.layers.2.crossattention.attention.k_pos_embed']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+2023-11-16 12:50:01 | ERROR | stderr | /home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py:889: UserWarning: api_name http_bot already exists, using http_bot_1
+2023-11-16 12:50:01 | ERROR | stderr |   warnings.warn(f"api_name {api_name} already exists, using {api_name_}")
+2023-11-16 12:50:01 | ERROR | stderr | /home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py:889: UserWarning: api_name add_text already exists, using add_text_1
+2023-11-16 12:50:01 | ERROR | stderr |   warnings.warn(f"api_name {api_name} already exists, using {api_name_}")
+2023-11-16 12:50:01 | ERROR | stderr | /home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py:889: UserWarning: api_name http_bot already exists, using http_bot_2
+2023-11-16 12:50:01 | ERROR | stderr |   warnings.warn(f"api_name {api_name} already exists, using {api_name_}")
+2023-11-16 12:50:01 | ERROR | stderr | /home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py:889: UserWarning: api_name add_text already exists, using add_text_2
+2023-11-16 12:50:01 | ERROR | stderr |   warnings.warn(f"api_name {api_name} already exists, using {api_name_}")
+2023-11-16 12:50:01 | INFO | stdout | Running on local URL:  http://0.0.0.0:7860
+2023-11-16 12:50:19 | INFO | stdout | Running on public URL: https://45768d7a60c39da058.gradio.live
+2023-11-16 12:50:19 | INFO | stdout | 
+2023-11-16 12:50:19 | INFO | stdout | This share link expires in 72 hours. For free permanent hosting and GPU upgrades, run `gradio deploy` from Terminal to deploy to Spaces (https://huggingface.co/spaces)
+2023-11-16 12:54:19 | INFO | stdout | Rate the quality of the image.
+2023-11-16 12:54:20 | INFO | stdout | Rate the quality of the image.
+2023-11-16 12:54:20 | ERROR | stderr | Traceback (most recent call last):
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/queueing.py", line 427, in call_prediction
+2023-11-16 12:54:20 | ERROR | stderr |     output = await route_utils.call_process_api(
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/route_utils.py", line 232, in call_process_api
+2023-11-16 12:54:20 | ERROR | stderr |     output = await app.get_blocks().process_api(
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py", line 1484, in process_api
+2023-11-16 12:54:20 | ERROR | stderr |     result = await self.call_function(
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py", line 1118, in call_function
+2023-11-16 12:54:20 | ERROR | stderr |     prediction = await utils.async_iteration(iterator)
+2023-11-16 12:54:20 | ERROR | stderr |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 514, in async_iteration
+2023-11-16 12:54:20 | ERROR | stderr |     return await iterator.__anext__()
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 507, in __anext__
+2023-11-16 12:54:20 | ERROR | stderr |     return await anyio.to_thread.run_sync(
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+2023-11-16 12:54:20 | ERROR | stderr |     return await get_asynclib().run_sync_in_worker_thread(
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+2023-11-16 12:54:20 | ERROR | stderr |     return await future
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+2023-11-16 12:54:20 | ERROR | stderr |     result = context.run(func, *args)
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 490, in run_sync_iterator_async
+2023-11-16 12:54:20 | ERROR | stderr |     return next(iterator)
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 653, in gen_wrapper
+2023-11-16 12:54:20 | ERROR | stderr |     yield from f(*args, **kwargs)
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/Downloads/Q-Instruct/local_demos/mplug_owl_2/app.py", line 215, in http_bot_modified
+2023-11-16 12:54:20 | ERROR | stderr |     state.messages[-2][1] = ('<|image|>Rate the quality of the image.',) + state.messages[-2][1][1:]
+2023-11-16 12:54:20 | ERROR | stderr |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-11-16 12:54:20 | ERROR | stderr | TypeError: can only concatenate tuple (not "str") to tuple
+2023-11-16 12:54:20 | ERROR | stderr | Traceback (most recent call last):
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/queueing.py", line 427, in call_prediction
+2023-11-16 12:54:20 | ERROR | stderr |     output = await route_utils.call_process_api(
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/route_utils.py", line 232, in call_process_api
+2023-11-16 12:54:20 | ERROR | stderr |     output = await app.get_blocks().process_api(
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py", line 1484, in process_api
+2023-11-16 12:54:20 | ERROR | stderr |     result = await self.call_function(
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py", line 1118, in call_function
+2023-11-16 12:54:20 | ERROR | stderr |     prediction = await utils.async_iteration(iterator)
+2023-11-16 12:54:20 | ERROR | stderr |                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 514, in async_iteration
+2023-11-16 12:54:20 | ERROR | stderr |     return await iterator.__anext__()
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 507, in __anext__
+2023-11-16 12:54:20 | ERROR | stderr |     return await anyio.to_thread.run_sync(
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/anyio/to_thread.py", line 33, in run_sync
+2023-11-16 12:54:20 | ERROR | stderr |     return await get_asynclib().run_sync_in_worker_thread(
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 877, in run_sync_in_worker_thread
+2023-11-16 12:54:20 | ERROR | stderr |     return await future
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 807, in run
+2023-11-16 12:54:20 | ERROR | stderr |     result = context.run(func, *args)
+2023-11-16 12:54:20 | ERROR | stderr |              ^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 490, in run_sync_iterator_async
+2023-11-16 12:54:20 | ERROR | stderr |     return next(iterator)
+2023-11-16 12:54:20 | ERROR | stderr |            ^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/utils.py", line 653, in gen_wrapper
+2023-11-16 12:54:20 | ERROR | stderr |     yield from f(*args, **kwargs)
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/Downloads/Q-Instruct/local_demos/mplug_owl_2/app.py", line 215, in http_bot_modified
+2023-11-16 12:54:20 | ERROR | stderr |     state.messages[-2][1] = ('<|image|>Rate the quality of the image.',) + state.messages[-2][1][1:]
+2023-11-16 12:54:20 | ERROR | stderr |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+2023-11-16 12:54:20 | ERROR | stderr | TypeError: can only concatenate tuple (not "str") to tuple
+2023-11-16 12:54:20 | ERROR | stderr | 
+2023-11-16 12:54:20 | ERROR | stderr | The above exception was the direct cause of the following exception:
+2023-11-16 12:54:20 | ERROR | stderr | 
+2023-11-16 12:54:20 | ERROR | stderr | Traceback (most recent call last):
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/queueing.py", line 472, in process_events
+2023-11-16 12:54:20 | ERROR | stderr |     response = await self.call_prediction(awake_events, batch)
+2023-11-16 12:54:20 | ERROR | stderr |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:20 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/queueing.py", line 436, in call_prediction
+2023-11-16 12:54:20 | ERROR | stderr |     raise Exception(str(error) if show_error else None) from error
+2023-11-16 12:54:20 | ERROR | stderr | Exception: None
+2023-11-16 12:54:42 | INFO | stdout | Keyboard interruption in main thread... closing server.
+2023-11-16 12:54:42 | ERROR | stderr | Traceback (most recent call last):
+2023-11-16 12:54:42 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py", line 2152, in block_thread
+2023-11-16 12:54:42 | ERROR | stderr |     time.sleep(0.1)
+2023-11-16 12:54:42 | ERROR | stderr | KeyboardInterrupt
+2023-11-16 12:54:42 | ERROR | stderr | 
+2023-11-16 12:54:42 | ERROR | stderr | During handling of the above exception, another exception occurred:
+2023-11-16 12:54:42 | ERROR | stderr | 
+2023-11-16 12:54:42 | ERROR | stderr | Traceback (most recent call last):
+2023-11-16 12:54:42 | ERROR | stderr |   File "/home/ps/Downloads/Q-Instruct/local_demos/mplug_owl_2/app.py", line 499, in <module>
+2023-11-16 12:54:42 | ERROR | stderr |     ).launch(
+2023-11-16 12:54:42 | ERROR | stderr |       ^^^^^^^
+2023-11-16 12:54:42 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py", line 2059, in launch
+2023-11-16 12:54:42 | ERROR | stderr |     self.block_thread()
+2023-11-16 12:54:42 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/blocks.py", line 2156, in block_thread
+2023-11-16 12:54:42 | ERROR | stderr |     self.server.close()
+2023-11-16 12:54:42 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/site-packages/gradio/networking.py", line 75, in close
+2023-11-16 12:54:42 | ERROR | stderr |     self.thread.join()
+2023-11-16 12:54:42 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/threading.py", line 1112, in join
+2023-11-16 12:54:42 | ERROR | stderr |     self._wait_for_tstate_lock()
+2023-11-16 12:54:42 | ERROR | stderr |   File "/home/ps/anaconda3/lib/python3.11/threading.py", line 1132, in _wait_for_tstate_lock
+2023-11-16 12:54:42 | ERROR | stderr |     if lock.acquire(block, timeout):
+2023-11-16 12:54:42 | ERROR | stderr |        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2023-11-16 12:54:42 | ERROR | stderr | KeyboardInterrupt
+2023-11-16 12:54:42 | INFO | stdout | Killing tunnel 0.0.0.0:7860 <> https://45768d7a60c39da058.gradio.live

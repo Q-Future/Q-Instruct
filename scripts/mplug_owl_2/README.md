@@ -1,17 +1,18 @@
-## Training@LLaVA-v1.5
+## Training@mPLUG-Owl-2
 
-This document provides instruction on how to train with **Q-Instruct** dataset on LLaVA-v1.5 (7B/13B), under the proposed two strategies (***mix*** and ***after***), shown as follows.
+This document provides instruction on how to train with **Q-Instruct** dataset on mPLUG-Owl-2 (LLaMA2-7B), under the proposed two strategies (***mix*** and ***after***), shown as follows.
 
 ![](strategies.png)
 
+*Due to copyright issues, the pre-trained weights of mPLUG-Owl-2 is not available at present. Therefore, the open-source mix strategy at present is slightly different, that we need to use a mix of **high-level datasets** and **Q-Instruct** on the SFT checkpoint of mPLUG-Owl-2.*
 
 ### Step 0: Pre-requisites
 
-Install [LLaVA](https://github.com/haotian-liu/LLaVA/) under the main repository, with flash attention for more efficient training.
+Install [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl/) under the main repository, with flash attention for more efficient training.
 
 ```shell
-git clone https://github.com/haotian-liu/LLaVA.git
-cd LLaVA
+git clone https://github.com/X-PLUG/mPLUG-Owl.git
+cd mPLUG-Owl/mPLUG_Owl_2
 pip install -e ".[train]"
 pip install flash_attn --no-build-isolation
 cd ..
@@ -24,15 +25,17 @@ After that, you can conduct *low-level visual instruction tuning* as follows, un
 
 #### Download Q-Instruct
 
+*Note: If you have already downloaded for LLaVA, you may directly copy them here.*
+
 For the **Q-Instruct** dataset, download them directly via the following script:
 
 ```shell
-cd LLaVA/playground/data
+cd mPLUG-Owl/mPLUG_Owl_2/playground/data
 wget https://huggingface.co/datasets/teowu/Q-Instruct/resolve/main/cleaned_labels.json
 wget https://huggingface.co/datasets/teowu/Q-Instruct/resolve/main/q-instruct-images.tar
 tar -xf q-instruct-images.tar
 rm -f q-instruct-images.tar
-cd ../../..
+cd ../../../..
 ```
 
 Make sure you have the file structures as follows under `LLaVA/playground/data`.
@@ -45,14 +48,15 @@ Make sure you have the file structures as follows under `LLaVA/playground/data`.
 
 #### Download Public High-level Instruction Tuning Datasets
 
-If you choose the ***mix*** strategy, the high-level datasets also need to be downloaded via the following steps:
+*Note: If you have already downloaded for LLaVA, you may directly copy them here.*
 
+If you choose the ***mix*** strategy, the high-level datasets also need to be downloaded via the following steps:
 
 
 1. Download the annotation of the final mixture our instruction tuning data [llava_v1_5_mix665k.json](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json):
 
 ```shell
-wget -P LLaVA/playground/data https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json
+wget -P mPLUG-Owl/mPLUG_Owl2/playground/data https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json
 ```
 
 2. Download the images from constituting datasets:
@@ -82,44 +86,32 @@ After downloading all of them, organize the high-level data as follows in `LLaVA
 3. Merge the **Q-Instruct** labels with labels from high-level datasets.
 
 ```shell
-jq -s 'add' LLaVA/playground/data/cleaned_labels.json LLaVA/playground/data/llava_v1_5_mix665k.json > LLaVA/playground/data/mix_cleaned_labels.json
+jq -s 'add' mPLUG-Owl/mPLUG_Owl2/playground/data/cleaned_labels.json mPLUG-Owl/mPLUG_Owl2/playground/data/llava_v1_5_mix665k.json > mPLUG-Owl/mPLUG_Owl2/playground/data/mix_cleaned_labels.json
 ```
+
 
 ### Step 2: Start Training
 
 Please make sure you have enough computational resources before training.
 
+- [Must Do!] Replace all the `<image>` token in the json into `<|image|>`, Otherwise the image will not be loaded into training.
+
+```shell
+sed -i 's/<image>/<|image|>/g' mPLUG-Owl/mPLUG_Owl2/playground/data/mix_cleaned_labels.json
+```
+
 #### Strategy (a): Mix with High-level Datasets
 
-- *(Pre-requisite)* Get Pre-trained Multi-modal Projectors from original LLaVA-v1.5
+- Training *(requires 8x A100 80G), 11h*
 
 ```shell
-sh scripts/llava_v1.5/get_mm_projectors.sh
-```
-
-- 13B *(requires 8x A100 80G), 21h*
-
-```shell
-sh scripts/llava_v1.5/mix_qinstruct_llava_v1.5_13b.sh
-```
-
-- 7B *(requires 8x A100 40G), 18h*
-
-```shell
-sh scripts/llava_v1.5/mix_qinstruct_llava_v1.5_7b.sh
+sh scripts/mplug_owl_2/mix_qinstruct.sh
 ```
 
 #### Strategy (b): After High-level Datasets
 
-- 13B *(requires 8x A100 80G), 3.5h*
+- Training *(requires 8x A100 80G), 1.5h*
 
 ```shell
-sh scripts/llava_v1.5/after_qinstruct_llava_v1.5_13b.sh
-```
-
-- 7B *(requires 8x A100 40G), 3h*
-
-```shell
-sh scripts/llava_v1.5/after_qinstruct_llava_v1.5_7b.sh
-```
-
+sh scripts/mplug_owl_2/after_qinstruct.sh
+```PLUG-Owl/mPLUG_Owl2/playground/data/mix_cleaned_labels.json

@@ -329,7 +329,8 @@ See [Model Zoo](model_zoo). Both **huggingface** and **modelscope** weights are 
 
 ## Training
 
-At present, we only provide the training scripts with LLaVA-v1.5 (7B/13B). Please see [Training Docs](scripts/llava_v1.5) for more details.
+- [Training Docs for LLaVA-v1.5](scripts/llava_v1.5)
+- [Training Docs for mPLUG-Owl-2](scripts/mplug_owl_2)
 
 ## License
 

@@ -12,7 +12,7 @@ Install [mPLUG-Owl](https://github.com/X-PLUG/mPLUG-Owl/) under the main reposit
 
 ```shell
 git clone https://github.com/X-PLUG/mPLUG-Owl.git
-cd mPLUG-Owl/mPLUG_Owl_2
+cd mPLUG-Owl/mPLUG-Owl2
 pip install -e ".[train]"
 pip install flash_attn --no-build-isolation
 cd ..
@@ -30,7 +30,7 @@ After that, you can conduct *low-level visual instruction tuning* as follows, un
 For the **Q-Instruct** dataset, download them directly via the following script:
 
 ```shell
-cd mPLUG-Owl/mPLUG_Owl_2/playground/data
+cd mPLUG-Owl/mPLUG-Owl2/playground/data
 wget https://huggingface.co/datasets/teowu/Q-Instruct/resolve/main/cleaned_labels.json
 wget https://huggingface.co/datasets/teowu/Q-Instruct/resolve/main/q-instruct-images.tar
 tar -xf q-instruct-images.tar
@@ -56,7 +56,7 @@ If you choose the ***mix*** strategy, the high-level datasets also need to be do
 1. Download the annotation of the final mixture our instruction tuning data [llava_v1_5_mix665k.json](https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json):
 
 ```shell
-wget -P mPLUG-Owl/mPLUG_Owl2/playground/data https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json
+wget -P mPLUG-Owl/mPLUG-Owl2/playground/data https://huggingface.co/datasets/liuhaotian/LLaVA-Instruct-150K/blob/main/llava_v1_5_mix665k.json
 ```
 
 2. Download the images from constituting datasets:
@@ -86,7 +86,7 @@ After downloading all of them, organize the high-level data as follows in `LLaVA
 3. Merge the **Q-Instruct** labels with labels from high-level datasets.
 
 ```shell
-jq -s 'add' mPLUG-Owl/mPLUG_Owl2/playground/data/cleaned_labels.json mPLUG-Owl/mPLUG_Owl2/playground/data/llava_v1_5_mix665k.json > mPLUG-Owl/mPLUG_Owl2/playground/data/mix_cleaned_labels.json
+jq -s 'add' mPLUG-Owl/mPLUG-Owl2/playground/data/cleaned_labels.json mPLUG-Owl/mPLUG-Owl2/playground/data/llava_v1_5_mix665k.json > mPLUG-Owl/mPLUG-Owl2/playground/data/mix_cleaned_labels.json
 ```
 
 
@@ -97,7 +97,7 @@ Please make sure you have enough computational resources before training.
 - [Must Do!] Replace all the `<image>` token in the json into `<|image|>`, Otherwise the image will not be loaded into training.
 
 ```shell
-sed -i 's/<image>/<|image|>/g' mPLUG-Owl/mPLUG_Owl2/playground/data/mix_cleaned_labels.json
+sed -i 's/<image>/<|image|>/g' mPLUG-Owl/mPLUG-Owl2/playground/data/mix_cleaned_labels.json
 ```
 
 #### Strategy (a): Mix with High-level Datasets

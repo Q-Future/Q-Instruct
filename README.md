@@ -53,13 +53,41 @@
 We have now supported to run the Q-Instruct demos on your own device!
 
 See [local demos](local_demos) for instructions. (*Now support `mplug_owl-2` only*)
-  
+
+## Quicker Start: *the Scorer API*
+
+
+Install dependencies:
+
+```shell
+git clone https://github.com/X-PLUG/mPLUG-Owl.git
+cd mPLUG-Owl/mPLUG-Owl2/ 
+pip install -e .
+```
+
+Create a scorer:
+
+```python
+from boost_qa.model import QInstructScorer as Scorer
+scorer = Scorer(boost=False)
+```
+
+The scorer takes a PIL Image (or a list of PIL Images) as input:
+
+```python
+from PIL import Image
+images = [Image.open("fig/sausage.jpg"), Image.open("fig/examples_211.jpg")]
+print(scorer(images).tolist())
+```
+
+The output should be `[0.429931640625, 0.204833984375]`.
+
+
 ## Quick Start
 
 If your server is facing a poor connection to Hugging Face, we provide an alternative way to [Download Weights from ModelScope](model_zoo/#modelscope). Click in to see details.
 
 对于中国大陆地区的使用者，若您的服务器连接Hugging Face存在一些困难，我们亦提供通过*魔搭*下载权重的方式。敬请点击参阅[指南](model_zoo/#modelscope)。
-
 
 
 ### LLaVA-v1.5
@@ -154,7 +182,7 @@ python eval_scripts/llava_v1.5/eval_video_quality.py
 
 ```shell
 git clone https://github.com/X-PLUG/mPLUG-Owl.git
-cd mPLUG_Owl/mPLUG_Owl2/ 
+cd mPLUG-Owl/mPLUG-Owl2/ 
 pip install -e .
 ```
 

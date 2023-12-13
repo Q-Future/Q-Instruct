@@ -1,4 +1,4 @@
-## Training@LLaVA-v1.5
+## Train@LLaVA-v1.5
 
 This document provides instruction on how to train with **Q-Instruct** dataset on LLaVA-v1.5 (7B/13B), under the proposed two strategies (***mix*** and ***after***), shown as follows.
 

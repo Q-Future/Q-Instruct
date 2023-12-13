@@ -10,7 +10,8 @@ _Released_:
 
 - [LLaVA-v1.5-7B (mix)](https://huggingface.co/teowu/llava_v1.5_7b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_7b_qinstruct_preview_v0.1`
 - [LLaVA-v1.5-13B (mix)](https://huggingface.co/teowu/llava_v1.5_13b_qinstruct_preview_v0.1), HF-path: `teowu/llava_v1.5_13b_qinstruct_preview_v0.1`
-- [mPLUG-Owl-2 (mix)](https://huggingface.co/teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1), HF-path: `teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1`
+- [mPLUG-Owl-2 (mix, new version)](https://huggingface.co/teowu/mplug_owl2_7b_448_qinstruct_preview_v0.2), HF-path: `teowu/mplug_owl2_7b_448_qinstruct_preview_v0.2` (improves 2-3% on Q-Bench-MCQ)
+- [mPLUG-Owl-2 (mix, old version)](https://huggingface.co/teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1), HF-path: `teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1`
 - [InternLM-XComposer-VL (mix)](https://huggingface.co/DLight1551/internlm-xcomposer-vl-7b-qinstruct-full), HF-path: `DLight1551/internlm-xcomposer-vl-7b-qinstruct-full`
 
 

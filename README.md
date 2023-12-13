@@ -166,7 +166,7 @@ pip install -e .
 ```python
 from mplug_owl2.mm_utils import get_model_name_from_path
 from eval_scripts.mplug_owl_2.run_mplug_owl2 import eval_model
-model_path = "teowu/mplug_owl2_7b_448_qinstruct_preview_v0.1" 
+model_path = "teowu/mplug_owl2_7b_448_qinstruct_preview_v0.2" 
 prompt = "Rate the quality of the image. Think step by step."
 image_file = "fig/sausage.jpg"
 args = type('Args', (), {

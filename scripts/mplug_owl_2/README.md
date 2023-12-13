@@ -1,4 +1,4 @@
-## Training@mPLUG-Owl-2
+## Train@mPLUG-Owl-2
 
 This document provides instruction on how to train with **Q-Instruct** dataset on mPLUG-Owl-2 (LLaMA2-7B), under the proposed two strategies (***mix*** and ***after***), shown as follows.
 
@@ -114,4 +114,4 @@ sh scripts/mplug_owl_2/mix_qinstruct.sh
 
 ```shell
 sh scripts/mplug_owl_2/after_qinstruct.sh
-```PLUG-Owl/mPLUG_Owl2/playground/data/mix_cleaned_labels.json
+```

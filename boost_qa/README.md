@@ -21,12 +21,13 @@ Recent advancements in Multi-modality Large Language Models (MLLMs) have demonst
 
 ### Citation
 
+```bibtex
 @misc{zhang2023qboost,
       title={Q-Boost: On Visual Quality Assessment Ability of Low-level Multi-Modality Foundation Models}, 
       author={Zicheng Zhang and Haoning Wu and Zhongpeng Ji and Chunyi Li and Erli Zhang and Wei Sun and Xiaohong Liu and Xiongkuo Min and Fengyu Sun and Shangling Jui and Weisi Lin and Guangtao Zhai},
       year={2023},
       eprint={2312.15300},
       archivePrefix={arXiv},
-      primaryClass={cs.CV}
-      
+      primaryClass={cs.CV}   
 }
+```

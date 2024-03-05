@@ -10,7 +10,7 @@
     
   <h1>Q-Instruct: Improving Low-level Visual Abilities for Multi-modality Foundation Models</h1>
 
-
+<div> CVPR 2024 </div>
 
   <div>
       <a href="https://teowu.github.io/" target="_blank">Haoning Wu</a><sup>1</sup><sup>*</sup>,
